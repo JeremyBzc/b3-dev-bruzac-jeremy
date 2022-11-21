@@ -29,4 +29,16 @@ describe("Testing the Triangle Functions", function () {
     expect(t3.getSurfaceArea()).to.equal(6);
     done();
   });
+
+  it("4. Is Equilateral Triangle", function (done) {
+    let t4 = new Triangle(3, 3, 3);
+    expect(t4.isEquilateral()).to.equal("Is Equilateral");
+    done();
+  });
+
+  it("5. Is Isoscele Triangle", function (done) {
+    let t5 = new Triangle(2, 3, 4);
+    expect(t5.isIsoscele()).to.equal("Is Isoscele");
+    done();
+  });
 });

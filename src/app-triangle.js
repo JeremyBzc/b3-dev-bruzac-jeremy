@@ -27,6 +27,22 @@ class Triangle {
 
     return Math.sqrt(heronFormule);
   }
+  isEquilateral() {
+    if (
+      this.sideA === this.sideB &&
+      this.sideB === this.sideC &&
+      this.sideC === this.sideA
+    )
+      return "Is Equilateral";
+  }
+  isIsoscele() {
+    if (
+      this.sideA === this.sideB ||
+      this.sideA === this.sideC ||
+      this.sideB === this.sideC
+    )
+      return "Is Isoscele";
+  }
 }
 
 module.exports = {
