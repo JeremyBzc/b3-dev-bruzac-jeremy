@@ -17,16 +17,15 @@ class Triangle {
   getPerimeter() {
     return this.sideA + this.sideB + this.sideC;
   }
-  getHeight() {
-    return this.length * this.height;
-  }
   getSurfaceArea() {
-    return Math.sqrt(
-      ((this.sideA + this.sideB + this.sideC) / 2) *
-        (((this.sideA + this.sideB + this.sideC) / 2 - this.sideA) *
-          ((this.sideA + this.sideB + this.sideC) / 2 - this.sideB) *
-          ((this.sideA + this.sideB + this.sideC) / 2 - this.sideC))
-    );
+    const perimeter = (this.sideA + this.sideB + this.sideC) / 2;
+    const heronFormule =
+      perimeter *
+      ((perimeter - this.sideA) *
+        (perimeter - this.sideB) *
+        (perimeter - this.sideC));
+
+    return Math.sqrt(heronFormule);
   }
 }
 

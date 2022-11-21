@@ -19,14 +19,14 @@ describe("Testing the Triangle Functions", function () {
     done();
   });
   it("2. The perimeter of the Triangle", function (done) {
-    let t1 = new Triangle(5, 5, 3);
-    expect(t1.getPerimeter()).to.equal(13);
+    let t2 = new Triangle(5, 5, 3);
+    expect(t2.getPerimeter()).to.equal(13);
     done();
   });
 
   it("3. The surface area of the Triangle", function (done) {
-    let t2 = new Triangle(3, 4, 5);
-    expect(t2.getSurfaceArea()).to.equal(6);
+    let t3 = new Triangle(3, 4, 5);
+    expect(t3.getSurfaceArea()).to.equal(6);
     done();
   });
 });
