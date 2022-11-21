@@ -37,7 +37,7 @@ describe("Testing the Triangle Functions", function () {
   });
 
   it("5. Is Isoscele Triangle", function (done) {
-    let t5 = new Triangle(2, 3, 4);
+    let t5 = new Triangle(2, 2, 4);
     expect(t5.isIsoscele()).to.equal("Is Isoscele");
     done();
   });
